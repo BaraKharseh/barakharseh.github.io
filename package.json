@@ -2,7 +2,7 @@
   "homepage": "http://barakharseh.github.io/personal-website",
   "name": "personal-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@formspree/react": "^2.4.0",
     "@fortawesome/fontawesome-free": "^6.2.0",
