@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BaraKharseh.github.io/static/css/main.476632fa.css",
+    "main.js": "/BaraKharseh.github.io/static/js/main.86002fb2.js",
+    "static/media/IMG_4334.jpg": "/BaraKharseh.github.io/static/media/IMG_4334.86ca5b84c714c9ffab1b.jpg",
+    "index.html": "/BaraKharseh.github.io/index.html",
+    "main.476632fa.css.map": "/BaraKharseh.github.io/static/css/main.476632fa.css.map",
+    "main.86002fb2.js.map": "/BaraKharseh.github.io/static/js/main.86002fb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.476632fa.css",
+    "static/js/main.86002fb2.js"
+  ]
+}
