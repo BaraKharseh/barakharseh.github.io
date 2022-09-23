@@ -10,7 +10,7 @@ import useDarkMode from "./hook/useDarkMode";
 const App = () => {
   useDarkMode();
   return (
-    <div className="bg-white dark:bg-black w-full transition duration-300">
+    <div className="bg-white dark:bg-black w-full transition duration-300 z-[-2]">
       <Navbar />
       <Home />
       <About />

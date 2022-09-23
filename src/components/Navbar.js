@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Theme from "./Theme";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   let Links = [
@@ -10,25 +10,32 @@ const Navbar = () => {
     { name: "PROJECTS", to: "projects", id: "projects" },
     { name: "CONTACT", to: "contact", id: "contact" },
   ];
-  // let [open, setOpen] = useState(false);
+  let [open, setOpen] = useState(false);
 
   return (
     <div className="w-full absolute top-0 left-0">
-      <div className="flex items-center justify-between py-10 p-10vw">
-        <div className="text-2vw dark:text-white text-black font-merriweather font-bold">
+      <div className="md:flex items-center justify-between md:py-10 py-5 md:p-10vw px-7">
+        <div className="md:text-2xl text-xl dark:text-white text-black font-merriweather font-bold">
           BARA KHARSEH
         </div>
 
-        {/* <div
+        <div
           onClick={() => setOpen(!open)}
-          className="dark:text-white text-black text-3xl absolute right-8 top-9 cursor-pointer md:hidden"
+          className="dark:text-white text-black text-2xl absolute right-8 top-4 cursor-pointer md:hidden"
         >
           <FontAwesomeIcon icon={open ? faX : faBars} />
-        </div> */}
+        </div>
 
-        <ul className="dark:text-white text-black font-merriweather flex">
+        <ul
+          className={`dark:text-white text-black font-merriweather md:flex md:items-center absolute md:static w-full md:w-auto transition-all duration-300 ease-in ${
+            open ? "left-7 opacity-100" : "left-[-100px]"
+          } md:opacity-100`}
+        >
           {Links.map((link) => (
-            <li key={link.name} className="ml-8 text-1.5vw md:my-0">
+            <li
+              key={link.name}
+              className="md:ml-8 md:text-xl text-lg md:my-0 my-7"
+            >
               <Link
                 to={link.to}
                 spy={true}

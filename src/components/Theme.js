@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const Theme = () => {
   const [colorTheme, setTheme] = useDarkMode();
   return (
-    <button onClick={() => setTheme(colorTheme)} className="text-1.5vw ml-8">
+    <button onClick={() => setTheme(colorTheme)} className="text-xl md:ml-8">
       {colorTheme === "dark" ? (
         <FontAwesomeIcon
           icon={faSun}

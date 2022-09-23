@@ -19,13 +19,13 @@ const Home = () => {
       id="home"
       className="flex h-screen flex-col justify-center items-center"
     >
-      <h1 className="md:text-5vw text-4vw dark:text-white text-black font-bold font-merriweather text-center md:mb-7 mb-5">
+      <h1 className="md:text-6xl text-2xl dark:text-white text-black font-bold font-merriweather text-center md:mb-7 mb-5">
         {helloWorld}
       </h1>
-      <h1 className="md:text-5vw text-4vw dark:text-white text-black font-bold font-merriweather text-center md:mb-7 mb-5">
+      <h1 className="md:text-6xl text-2xl dark:text-white text-black font-bold font-merriweather text-center md:mb-7 mb-5">
         My name is Bara Kharseh.
       </h1>
-      <div className="md:flex space-x-20 md:text-2vw text-1.5vw dark:text-white text-black font-merriweather">
+      <div className="md:flex md:space-x-20 space-x-10 md:text-2xl text-md dark:text-white text-black font-merriweather">
         <a
           href="https://github.com/BaraKharseh"
           target="_blank"
