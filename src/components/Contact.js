@@ -9,11 +9,11 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <h1 className="text-4xl dark:text-white text-black font-bold font-merriweather text-center py-10">
+      <h1 className="md:text-4xl text-3xl dark:text-white text-black font-bold font-merriweather text-center py-10">
         Contact Me
       </h1>
       <form onSubmit={handleSubmit}>
-        <div className="mx-auto max-w-lg">
+        <div className="mx-auto md:max-w-lg max-w-xs">
           <input
             id="name"
             type="name"

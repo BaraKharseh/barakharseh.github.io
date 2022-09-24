@@ -41,9 +41,9 @@ const Home = () => {
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
         <a
-          href="https://drive.google.com/file/d/19NweXjkQZWRDF__YmRn-sdNAVwrE8Nbd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SNHwKwO7YR1J9EEZznao1XSeWXj0UnQS/view?usp=sharing"
           target="_blank"
-          className="hover:text-rose-500 duration-300"
+          className="hover:text-orange-400 duration-300"
         >
           <FontAwesomeIcon icon={faFile} /> Resume
         </a>

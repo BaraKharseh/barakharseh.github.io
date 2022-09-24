@@ -21,14 +21,17 @@ const Navbar = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="dark:text-white text-black text-2xl absolute right-8 top-4 cursor-pointer md:hidden"
+          className="flex dark:text-white text-black absolute right-8 top-6 cursor-pointer md:hidden"
         >
-          <FontAwesomeIcon icon={open ? faX : faBars} />
+          <FontAwesomeIcon icon={open ? faX : faBars} className="text-xl" />
+          <div className="font-merriweather ml-3">
+            {open ? "Close" : "Menu"}
+          </div>
         </div>
 
         <ul
-          className={`dark:text-white text-black font-merriweather md:flex md:items-center absolute md:static w-full md:w-auto transition-all duration-300 ease-in ${
-            open ? "left-7 opacity-100" : "left-[-100px]"
+          className={`dark:text-white text-black font-merriweather md:flex md:items-center absolute md:static w-full md:w-auto transition-all duration-300 ease-in-out ${
+            open ? "left-7 opacity-100" : "left-[-90px]"
           } md:opacity-100`}
         >
           {Links.map((link) => (
@@ -38,6 +41,7 @@ const Navbar = () => {
             >
               <Link
                 to={link.to}
+                onClick={() => setOpen(!open)}
                 spy={true}
                 smooth={true}
                 duration={500}
