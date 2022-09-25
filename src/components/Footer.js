@@ -22,17 +22,17 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/bara-kharseh-a146b521a"
             target="_blank"
-            className="hover:text-blue-500 duration-300"
+            className="hover:text-blue-500 duration-300 ml-8"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="ml-8" />
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <button
             onClick={() =>
               (window.location = "mailto:bara.kharseh@mail.utoronto.ca")
             }
-            className="hover:text-orange-400 duration-300"
+            className="hover:text-orange-400 duration-300 ml-8"
           >
-            <FontAwesomeIcon icon={faEnvelope} className="ml-8" />
+            <FontAwesomeIcon icon={faEnvelope} />
           </button>
         </div>
       </div>

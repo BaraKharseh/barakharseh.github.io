@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
@@ -41,11 +41,11 @@ const Home = () => {
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
         <a
-          href="https://drive.google.com/file/d/1SNHwKwO7YR1J9EEZznao1XSeWXj0UnQS/view?usp=sharing"
+          href="https://drive.google.com/file/d/16yzTDzn6OyvFiG4TXJjSlBXVxFOEdyte/view?usp=sharing"
           target="_blank"
           className="hover:text-orange-400 duration-300"
         >
-          <FontAwesomeIcon icon={faFile} /> Resume
+          <FontAwesomeIcon icon={faUser} /> Resume
         </a>
       </div>
     </div>

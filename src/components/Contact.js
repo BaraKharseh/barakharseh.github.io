@@ -23,7 +23,7 @@ const Contact = () => {
             type="name"
             name="name"
             className="font-merriweather mb-5 bg-zinc-200 border border-zinc-300 dark:border-zinc-800 text-black text-sm rounded-lg w-full p-2.5 dark:bg-zinc-700 dark:text-white placeholder:italic"
-            placeholder="Name"
+            placeholder="Your Name"
             required
           />
 
@@ -32,7 +32,7 @@ const Contact = () => {
             type="email"
             name="email"
             className="font-merriweather mb-5 bg-zinc-200 border border-zinc-300 dark:border-zinc-800 text-black text-sm rounded-lg w-full p-2.5 dark:bg-zinc-700 dark:text-white placeholder:italic"
-            placeholder="Email"
+            placeholder="Your Email"
             required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -42,7 +42,7 @@ const Contact = () => {
             name="message"
             rows="6"
             className="font-merriweather mb-5 p-2.5 w-full text-sm text-black bg-zinc-200 rounded-lg border border-zinc-300 dark:bg-zinc-700 dark:border-zinc-800 dark:text-white placeholder:italic"
-            placeholder="Message"
+            placeholder="Your Message"
           />
           <ValidationError
             prefix="Message"
