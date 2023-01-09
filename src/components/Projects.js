@@ -8,6 +8,7 @@ import {
   faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import ASM from "../images/ASM.png";
 
 const Projects = () => {
   return (
@@ -16,7 +17,7 @@ const Projects = () => {
         Projects
       </h1>
 
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+      <div className="pb-8 md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
         <a
           href="https://github.com/The-CSC207-Group/Project207"
           target="_blank"
@@ -38,6 +39,16 @@ const Projects = () => {
             <FontAwesomeIcon icon={faJava} className="text-4xl" />
           </div>
         </a>
+        <div className="mx-auto p-2 w-48 dark:bg-zinc-500 bg-zinc-100 dark:text-white text-black font-merriweather text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-700 hover:cursor-pointer">
+          <a
+            href="https://replit.com/@ExoticLobster/Project207?v=1"
+            target="_blank"
+          >
+            <h1 className="md:text-lg text-md dark:text-white text-black">
+              Try on Replit
+            </h1>
+          </a>
+        </div>
       </div>
 
       <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
@@ -98,6 +109,28 @@ const Projects = () => {
               </h1>
             </div>
             <FontAwesomeIcon icon={faPython} className="text-4xl" />
+          </div>
+        </a>
+      </div>
+
+      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+        <a href="https://youtu.be/zmxwzpfhm1E" target="_blank">
+          <div className="p-10">
+            <h1 className="md:text-2xl text-xl dark:text-white text-black pb-5">
+              Breakout Game
+            </h1>
+            <div className="pb-5">
+              <h1 className="text-sm dark:text-white text-black flex">
+                The classic Breakout game written using MIPS Assembly. Features
+                include bricks taking multiple hits before breaking, unbreakable
+                bricks, a Game Over screen, sound effects, pause functionality,
+                and the ability to launch the ball at the beginning of each
+                attempt by pressing space.
+              </h1>
+            </div>
+            <div className="text-4xl flex justify-center place-items-center">
+              <img width="30" src={ASM} className="dark:invert md:mx-4" />
+            </div>
           </div>
         </a>
       </div>

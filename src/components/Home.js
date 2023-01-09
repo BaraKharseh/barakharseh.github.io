@@ -34,14 +34,14 @@ const Home = () => {
           <FontAwesomeIcon icon={faGithub} /> GitHub
         </a>
         <a
-          href="https://www.linkedin.com/in/bara-kharseh-a146b521a"
+          href="https://www.linkedin.com/in/barakharseh/"
           target="_blank"
           className="hover:text-blue-500 duration-300"
         >
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
         <a
-          href="https://drive.google.com/file/d/16yzTDzn6OyvFiG4TXJjSlBXVxFOEdyte/view?usp=sharing"
+          href="https://drive.google.com/file/d/1LcrlD_ikojAmgePuXnGdt1bVa-WDwZ6H/view?usp=sharing"
           target="_blank"
           className="hover:text-orange-400 duration-300"
         >

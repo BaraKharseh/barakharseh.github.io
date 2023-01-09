@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../images/IMG_4334.jpg";
+import profilePic from "../images/Bara-Kharseh-bara.kharseh@mail.utoronto.ca.jpg";
 
 const About = () => {
   return (
