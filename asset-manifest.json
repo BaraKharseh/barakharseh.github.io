@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd4c5e61.css",
-    "main.js": "/static/js/main.99afb01a.js",
-    "static/media/IMG_4334.jpg": "/static/media/IMG_4334.86ca5b84c714c9ffab1b.jpg",
+    "main.css": "/static/css/main.9074d246.css",
+    "main.js": "/static/js/main.c7cdcb96.js",
+    "static/media/Bara-Kharseh-bara.kharseh@mail.utoronto.ca.jpg": "/static/media/Bara-Kharseh-bara.kharseh@mail.utoronto.ca.b015585eb4741d97cfc1.jpg",
     "index.html": "/index.html",
-    "main.fd4c5e61.css.map": "/static/css/main.fd4c5e61.css.map",
-    "main.99afb01a.js.map": "/static/js/main.99afb01a.js.map"
+    "main.9074d246.css.map": "/static/css/main.9074d246.css.map",
+    "main.c7cdcb96.js.map": "/static/js/main.c7cdcb96.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd4c5e61.css",
-    "static/js/main.99afb01a.js"
+    "static/css/main.9074d246.css",
+    "static/js/main.c7cdcb96.js"
   ]
 }
