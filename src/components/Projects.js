@@ -39,7 +39,7 @@ const Projects = () => {
             <FontAwesomeIcon icon={faJava} className="text-4xl" />
           </div>
         </a>
-        <div className="mx-auto p-2 w-48 dark:bg-zinc-500 bg-zinc-100 dark:text-white text-black font-merriweather text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-700 hover:cursor-pointer">
+        <div className="mx-auto p-2 w-48 dark:bg-zinc-600 bg-zinc-100 dark:text-white text-black font-merriweather text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-800 hover:cursor-pointer">
           <a
             href="https://replit.com/@ExoticLobster/Project207?v=1"
             target="_blank"
