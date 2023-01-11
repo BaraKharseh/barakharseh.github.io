@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7dbd67f5.css",
-    "main.js": "/static/js/main.dfd9c548.js",
+    "main.js": "/static/js/main.172ee635.js",
     "static/media/Bara-Kharseh-bara.kharseh@mail.utoronto.ca.jpg": "/static/media/Bara-Kharseh-bara.kharseh@mail.utoronto.ca.b015585eb4741d97cfc1.jpg",
     "index.html": "/index.html",
     "main.7dbd67f5.css.map": "/static/css/main.7dbd67f5.css.map",
-    "main.dfd9c548.js.map": "/static/js/main.dfd9c548.js.map"
+    "main.172ee635.js.map": "/static/js/main.172ee635.js.map"
   },
   "entrypoints": [
     "static/css/main.7dbd67f5.css",
-    "static/js/main.dfd9c548.js"
+    "static/js/main.172ee635.js"
   ]
 }
