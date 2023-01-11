@@ -41,7 +41,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
         <a
-          href="https://drive.google.com/file/d/1LcrlD_ikojAmgePuXnGdt1bVa-WDwZ6H/view?usp=sharing"
+          href="https://drive.google.com/file/d/1KcgINvu_hJfS08VeDKS_LICu7_sofrUJ/view?usp=sharing"
           target="_blank"
           className="hover:text-orange-400 duration-300"
         >
