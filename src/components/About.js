@@ -20,11 +20,11 @@ const About = () => {
             Hi! I'm Bara <br /> <br />
           </h1>
           <h1 className="md:text-xl text-lg dark:text-white text-black font-merriweather">
-            I'm a second year undergraduate student at the University of
-            Toronto. <br /> <br /> I am currently pursuing a double major in
-            Computer Science and Human Biology. <br /> <br /> My interests
-            include reading, playing sports and working out. <br /> <br /> Feel
-            free to contact me via my LinkedIn or by using the form below!
+            I'm a third year undergraduate student at the University of Toronto.{" "}
+            <br /> <br /> I am currently pursuing a double major in Computer
+            Science and Human Biology. <br /> <br /> My interests include
+            reading, playing sports and working out. <br /> <br /> Feel free to
+            contact me via my LinkedIn or by using the form below!
           </h1>
         </div>
       </div>
