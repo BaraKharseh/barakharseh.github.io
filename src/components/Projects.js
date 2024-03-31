@@ -17,7 +17,7 @@ const Projects = () => {
         Projects
       </h1>
 
-      <div className="pb-8 md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
         <a
           href="https://github.com/The-CSC207-Group/Project207"
           target="_blank"
@@ -39,7 +39,7 @@ const Projects = () => {
             <FontAwesomeIcon icon={faJava} className="text-4xl" />
           </div>
         </a>
-        <div className="mx-auto p-2 w-48 dark:bg-zinc-600 bg-zinc-100 dark:text-white text-black font-merriweather text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-800 hover:cursor-pointer">
+        {/* <div className="mx-auto p-2 w-48 dark:bg-zinc-600 bg-zinc-100 dark:text-white text-black font-merriweather text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-800 hover:cursor-pointer">
           <a
             href="https://replit.com/@ExoticLobster/Project207?v=1"
             target="_blank"
@@ -48,7 +48,7 @@ const Projects = () => {
               Try on Replit
             </h1>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
