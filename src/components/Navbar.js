@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="w-full absolute top-0 left-0">
       <div className="md:flex items-center justify-between md:py-10 py-5 md:p-10vw px-7">
-        <div className="md:text-2xl text-xl dark:text-white text-black font-merriweather font-bold">
+        <div className="md:text-2xl text-xl dark:text-white text-black font-times font-bold">
           BARA KHARSEH
         </div>
 
@@ -24,13 +24,11 @@ const Navbar = () => {
           className="flex dark:text-white text-black absolute right-8 top-6 cursor-pointer md:hidden"
         >
           <FontAwesomeIcon icon={open ? faX : faBars} className="text-xl" />
-          <div className="font-merriweather ml-3">
-            {open ? "Close" : "Menu"}
-          </div>
+          <div className="font-times ml-3">{open ? "Close" : "Menu"}</div>
         </div>
 
         <ul
-          className={`dark:text-white text-black font-merriweather md:flex md:items-center absolute md:static w-full md:w-auto transition-all duration-300 ease-in-out ${
+          className={`dark:text-white text-black font-times md:flex md:items-center absolute md:static w-full md:w-auto transition-all duration-300 ease-in-out ${
             open ? "left-7 opacity-100" : "left-[-90px]"
           } md:opacity-100`}
         >

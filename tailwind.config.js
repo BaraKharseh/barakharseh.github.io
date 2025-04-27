@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         merriweather: ["Merriweather", "serif"],
+        times: ["Times New Roman", "serif"],
       },
       animation: {
         fadeInOut: "fadeInOut 3s ease-in-out infinite",

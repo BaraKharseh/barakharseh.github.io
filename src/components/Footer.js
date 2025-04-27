@@ -6,7 +6,7 @@ import useDarkMode from "../hook/useDarkMode";
 
 const Footer = () => {
   return (
-    <div className="text-black dark:text-white font-merriweather pb-10 md:pl-28 text-center">
+    <div className="text-black dark:text-white font-times pb-10 md:pl-28 text-center">
       <div className="md:flex justify-between">
         <h1 className="text-lg md:pb-0 pb-4">
           Copyright &copy; 2024 Bara Kharseh{" "}

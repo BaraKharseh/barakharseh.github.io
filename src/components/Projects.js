@@ -13,11 +13,11 @@ import ASM from "../images/ASM.png";
 const Projects = () => {
   return (
     <div id="projects">
-      <h1 className="md:text-4xl text-3xl  dark:text-white text-black font-bold font-merriweather text-center py-10">
+      <h1 className="md:text-4xl text-3xl  dark:text-white text-black font-bold font-times text-center py-10">
         Projects
       </h1>
 
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
         <a
           href="https://github.com/The-CSC207-Group/Project207"
           target="_blank"
@@ -39,7 +39,7 @@ const Projects = () => {
             <FontAwesomeIcon icon={faJava} className="text-4xl" />
           </div>
         </a>
-        {/* <div className="mx-auto p-2 w-48 dark:bg-zinc-600 bg-zinc-100 dark:text-white text-black font-merriweather text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-800 hover:cursor-pointer">
+        {/* <div className="mx-auto p-2 w-48 dark:bg-zinc-600 bg-zinc-100 dark:text-white text-black font-times text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-800 hover:cursor-pointer">
           <a
             href="https://replit.com/@ExoticLobster/Project207?v=1"
             target="_blank"
@@ -51,7 +51,7 @@ const Projects = () => {
         </div> */}
       </div>
 
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
         <a
           href="https://github.com/BaraKharseh/personal-website"
           target="_blank"
@@ -90,7 +90,7 @@ const Projects = () => {
         </a>
       </div>
 
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
         <a
           href="https://github.com/BaraKharseh/CSC110-Final-Project"
           target="_blank"
@@ -113,7 +113,7 @@ const Projects = () => {
         </a>
       </div>
 
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-merriweather text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
+      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
         <a href="https://youtu.be/zmxwzpfhm1E" target="_blank">
           <div className="p-10">
             <h1 className="md:text-2xl text-xl dark:text-white text-black pb-5">

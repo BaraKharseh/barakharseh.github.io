@@ -1,10 +1,10 @@
 import React from "react";
-import profilePic from "../images/Subject.png";
+import profilePic from "../images/IMG_1926.heic";
 
 const About = () => {
   return (
     <div className="mb-10" id="about">
-      <h1 className="md:text-4xl text-3xl dark:text-white text-black font-bold font-merriweather text-center pt-10 md:pb-20 pb-10">
+      <h1 className="md:text-4xl text-3xl dark:text-white text-black font-bold font-times text-center pt-10 md:pb-20 pb-10">
         About Myself
       </h1>
 
@@ -16,10 +16,10 @@ const About = () => {
           className="rounded-lg md:mx-0 mx-auto"
         />
         <div className="md:w-1/3 md:ml-40 mx-10 md:mt-0 mt-10">
-          <h1 className="text-2xl dark:text-white text-black font-merriweather md:text-left text-center font-bold">
+          <h1 className="text-2xl dark:text-white text-black font-times md:text-left text-center font-bold">
             Hi! I'm Bara <br /> <br />
           </h1>
-          <h1 className="md:text-xl text-lg dark:text-white text-black font-merriweather">
+          <h1 className="md:text-xl text-lg dark:text-white text-black font-times">
             I'm a fourth year undergraduate student at the University of
             Toronto. <br /> <br /> I am currently pursuing a double major in
             Computer Science and Human Biology. <br /> <br /> My interests
