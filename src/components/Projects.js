@@ -1,140 +1,66 @@
-import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCss3,
-  faHtml5,
-  faJava,
-  faJs,
-  faPython,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import ASM from "../images/ASM.png";
+import React from "react";
+
+const projects = [
+  {
+    title: "SciRef",
+    description:
+      "Full-stack web app that generates customizable scientific references from journal URLs. React, Flask, Tailwind CSS.",
+    url: "https://github.com/tkharseh/sci-ref",
+  },
+  {
+    title: "Doctor Clinic Management System",
+    description:
+      "Terminal clinic management app with 50+ commands for appointments, prescriptions, and scheduling. Java, Clean Architecture, MVC.",
+    url: "https://github.com/The-CSC207-Group/Project207",
+  },
+  {
+    title: "Personal Website",
+    description: "This site — built with React and Tailwind CSS.",
+    url: "https://github.com/BaraKharseh/personal-website",
+  },
+];
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <h1 className="md:text-4xl text-3xl  dark:text-white text-black font-bold font-times text-center py-10">
-        Projects
-      </h1>
-
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
-        <a
-          href="https://github.com/The-CSC207-Group/Project207"
-          target="_blank"
-        >
-          <div className="p-10">
-            <h1 className="md:text-2xl text-xl dark:text-white text-black pb-5">
-              Doctor Clinic Management System
-            </h1>
-            <div className="pb-5">
-              <h1 className="text-sm dark:text-white text-black flex">
-                A program created to manage doctor clinics, including a login
-                system and user to user interactions. This program makes it easy
-                for patients to book appointments and view prescriptions, for
-                doctors to create patient prescriptions and reports and organize
-                their schedules, and for secretaries to book appointments for
-                patients and view a patient's prescriptions.
-              </h1>
-            </div>
-            <FontAwesomeIcon icon={faJava} className="text-4xl" />
-          </div>
-        </a>
-        {/* <div className="mx-auto p-2 w-48 dark:bg-zinc-600 bg-zinc-100 dark:text-white text-black font-times text-center rounded-3xl hover:bg-zinc-300 duration-300 dark:hover:bg-zinc-800 hover:cursor-pointer">
-          <a
-            href="https://replit.com/@ExoticLobster/Project207?v=1"
-            target="_blank"
-          >
-            <h1 className="md:text-lg text-md dark:text-white text-black">
-              Try on Replit
-            </h1>
-          </a>
-        </div> */}
-      </div>
-
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
-        <a
-          href="https://github.com/BaraKharseh/personal-website"
-          target="_blank"
-        >
-          <div className="p-10">
-            <h1 className="md:text-2xl text-xl dark:text-white text-black pb-5">
-              Personal Website
-            </h1>
-            <div className="pb-5">
-              <h1 className="text-sm dark:text-white text-black flex">
-                A website created to learn web development and showcase my
-                skills and projects. It is also created to be an ideal place to
-                put all my contact information and anything related to me. This
-                website was created using the React and Tailwind CSS frameworks.
-              </h1>
-            </div>
-            <div className="text-4xl flex justify-center place-items-center">
-              <FontAwesomeIcon icon={faReact} className="md:mr-8 mr-2" />
-              <img
-                width="60"
-                src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTE4LjUgOS41MWE0LjIyIDQuMjIgMCAwIDEtMS45MS0xLjM0QTUuNzcgNS43NyAwIDAgMCAxMiA2YTQuNzIgNC43MiAwIDAgMC01IDQgMy4yMyAzLjIzIDAgMCAxIDMuNS0xLjQ5IDQuMzIgNC4zMiAwIDAgMSAxLjkxIDEuMzVBNS43NyA1Ljc3IDAgMCAwIDE3IDEyYTQuNzIgNC43MiAwIDAgMCA1LTQgMy4yIDMuMiAwIDAgMS0zLjUgMS41MXptLTEzIDQuOThhNC4yMiA0LjIyIDAgMCAxIDEuOTEgMS4zNEE1Ljc3IDUuNzcgMCAwIDAgMTIgMThhNC43MiA0LjcyIDAgMCAwIDUtNCAzLjIzIDMuMjMgMCAwIDEtMy41IDEuNDkgNC4zMiA0LjMyIDAgMCAxLTEuOTEtMS4zNUE1LjggNS44IDAgMCAwIDcgMTJhNC43MiA0LjcyIDAgMCAwLTUgNCAzLjIgMy4yIDAgMCAxIDMuNS0xLjUxeiIvPjwvc3ZnPg=="
-                className="dark:invert md:mx-4"
-              />
-              {/* <svg
-                className="md:mx-4 mx-2 md:h-14 md:w-14 dark:fill-current dark:text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+    <section
+      id="projects"
+      className="py-20 border-t border-zinc-200 dark:border-zinc-800"
+    >
+      <h2 className="section-label">Projects</h2>
+      <ul className="space-y-6">
+        {projects.map((project) => (
+          <li key={project.title}>
+            {project.url ? (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+                className="group block"
               >
-                <path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" />
-              </svg> */}
-              <FontAwesomeIcon icon={faJs} className="md:mx-8 mx-2" />
-              <FontAwesomeIcon icon={faHtml5} className="md:mx-8 mx-2" />
-              <FontAwesomeIcon icon={faCss3} className="md:ml-8 ml-2" />
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
-        <a
-          href="https://github.com/BaraKharseh/CSC110-Final-Project"
-          target="_blank"
-        >
-          <div className="p-10">
-            <h1 className="md:text-2xl text-xl dark:text-white text-black pb-5">
-              COVID-19 Data Visualizer
-            </h1>
-            <div className="pb-5">
-              <h1 className="text-sm dark:text-white text-black flex">
-                A program created to visualize staffing actions taken during the
-                COVID-19 pandemic. By parsing multiple CSV files taken directly
-                from the Statistics Canada website and interacting with geojson
-                files, my partner and I were able to create double bar graphs
-                and choropleth maps to clearly portray the given data.
-              </h1>
-            </div>
-            <FontAwesomeIcon icon={faPython} className="text-4xl" />
-          </div>
-        </a>
-      </div>
-
-      <div className="md:w-2/3 w-10/12 dark:bg-zinc-700 bg-zinc-200 dark:text-white text-black font-times text-center m-auto rounded-3xl hover:shadow-xl duration-300 dark:hover:shadow-xl-dark mb-10">
-        <a href="https://youtu.be/zmxwzpfhm1E" target="_blank">
-          <div className="p-10">
-            <h1 className="md:text-2xl text-xl dark:text-white text-black pb-5">
-              Breakout Game
-            </h1>
-            <div className="pb-5">
-              <h1 className="text-sm dark:text-white text-black flex">
-                The classic Breakout game written using MIPS Assembly. Features
-                include bricks taking multiple hits before breaking, unbreakable
-                bricks, a Game Over screen, sound effects, pause functionality,
-                and the ability to launch the ball at the beginning of each
-                attempt by pressing space.
-              </h1>
-            </div>
-            <div className="text-4xl flex justify-center place-items-center">
-              <img width="30" src={ASM} className="dark:invert md:mx-4" />
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+                <div className="flex items-baseline justify-between gap-4">
+                  <h3 className="font-medium group-hover:underline underline-offset-4">
+                    {project.title}
+                  </h3>
+                  <span className="text-zinc-400 shrink-0" aria-hidden="true">
+                    ↗
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  {project.description}
+                </p>
+              </a>
+            ) : (
+              <div>
+                <h3 className="font-medium">{project.title}</h3>
+                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  {project.description}
+                </p>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

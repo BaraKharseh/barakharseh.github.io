@@ -1,5 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-6;
+  }
+
+  .link-muted {
+    @apply text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors;
+  }
+}

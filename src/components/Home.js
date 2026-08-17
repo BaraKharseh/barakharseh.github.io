@@ -1,54 +1,37 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+
+const links = [
+  { label: "GitHub", href: "https://github.com/BaraKharseh" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/barakharseh/" },
+  {
+    label: "Resume",
+    href: `${process.env.PUBLIC_URL}/Bara_Kharseh_2026_Resume.pdf`,
+  },
+];
 
 const Home = () => {
-  const [helloWorld, setHelloWorld] = useState("Hello, World!");
-
-  // setInterval(() => {
-  //   if (helloWorld == "Hello, World!") {
-  //     setHelloWorld("👋🏼, 🌍!");
-  //   } else {
-  //     setHelloWorld("Hello, World!");
-  //   }
-  // }, 3000);
-
   return (
-    <div
-      id="home"
-      className="flex h-screen flex-col justify-center items-center"
-    >
-      <h1 className="md:text-6xl text-2xl dark:text-white text-black font-bold font-times text-center md:mb-7 mb-5">
-        {helloWorld}
+    <section id="home" className="pt-32 pb-20">
+      <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
+        Bara Kharseh
       </h1>
-      <h1 className="md:text-6xl text-2xl dark:text-white text-black font-bold font-times text-center md:mb-7 mb-5">
-        My name is Bara Kharseh.
-      </h1>
-      <div className="md:flex md:space-x-20 space-x-10 md:text-2xl text-md dark:text-white text-black font-times">
-        <a
-          href="https://github.com/BaraKharseh"
-          target="_blank"
-          className="hover:text-gray-500 duration-300"
-        >
-          <FontAwesomeIcon icon={faGithub} /> GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/barakharseh/"
-          target="_blank"
-          className="hover:text-blue-500 duration-300"
-        >
-          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-        </a>
-        <a
-          href="https://drive.google.com/file/d/1VZMK1RUZLibEmPwBZehxTqiSmiPjBqSC/view?usp=sharing"
-          target="_blank"
-          className="hover:text-orange-400 duration-300"
-        >
-          <FontAwesomeIcon icon={faUser} /> Resume
-        </a>
+      <p className="mt-3 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+        Prev @ SickKids | HBSc in Computer Science & Human Biology
+      </p>
+      <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+        {links.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noreferrer"
+            className="link-muted underline-offset-4 hover:underline"
+          >
+            {link.label}
+          </a>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

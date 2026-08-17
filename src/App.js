@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from "react";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Awards from "./components/Awards";
+import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import useDarkMode from "./hook/useDarkMode";
 
 const App = () => {
-  useDarkMode();
   return (
-    <div className="bg-white dark:bg-black w-full transition duration-300 z-[-2]">
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <main className="max-w-2xl mx-auto px-6">
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+        <Awards />
+      </main>
       <Footer />
     </div>
   );

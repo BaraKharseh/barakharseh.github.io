@@ -1,58 +1,72 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Theme from "./Theme";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+
+const links = [
+  { name: "About", to: "about" },
+  { name: "Experience", to: "experience" },
+  { name: "Projects", to: "projects" },
+];
 
 const Navbar = () => {
-  let Links = [
-    { name: "ABOUT", to: "about", id: "about" },
-    { name: "PROJECTS", to: "projects", id: "projects" },
-    { name: "CONTACT", to: "contact", id: "contact" },
-  ];
-  let [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full absolute top-0 left-0">
-      <div className="md:flex items-center justify-between md:py-10 py-5 md:p-10vw px-7">
-        <div className="md:text-2xl text-xl dark:text-white text-black font-times font-bold">
-          BARA KHARSEH
-        </div>
-
-        <div
-          onClick={() => setOpen(!open)}
-          className="flex dark:text-white text-black absolute right-8 top-6 cursor-pointer md:hidden"
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm">
+      <div className="max-w-2xl mx-auto px-6 py-5 flex items-center justify-between">
+        <Link
+          to="home"
+          smooth
+          duration={500}
+          className="text-sm font-medium cursor-pointer"
         >
-          <FontAwesomeIcon icon={open ? faX : faBars} className="text-xl" />
-          <div className="font-times ml-3">{open ? "Close" : "Menu"}</div>
-        </div>
+          BK
+        </Link>
 
-        <ul
-          className={`dark:text-white text-black font-times md:flex md:items-center absolute md:static w-full md:w-auto transition-all duration-300 ease-in-out ${
-            open ? "left-7 opacity-100" : "left-[-90px]"
-          } md:opacity-100`}
-        >
-          {Links.map((link) => (
-            <li
-              key={link.name}
-              className="md:ml-8 md:text-xl text-lg md:my-0 my-7"
+        <nav className="hidden md:flex items-center gap-6 text-sm">
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              smooth
+              duration={500}
+              className="link-muted cursor-pointer"
             >
-              <Link
-                to={link.to}
-                onClick={() => setOpen(!open)}
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="hover:text-gray-400 duration-300 scroll-smooth hover:cursor-pointer"
-              >
-                {link.name}
-              </Link>
-            </li>
+              {link.name}
+            </Link>
           ))}
           <Theme />
-        </ul>
+        </nav>
+
+        <div className="flex items-center gap-4 md:hidden">
+          <Theme />
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-sm link-muted"
+            aria-label={open ? "Close menu" : "Open menu"}
+          >
+            {open ? "Close" : "Menu"}
+          </button>
+        </div>
       </div>
-    </div>
+
+      {open && (
+        <nav className="md:hidden border-t border-zinc-200 dark:border-zinc-800 px-6 py-4 space-y-3 text-sm">
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              smooth
+              duration={500}
+              onClick={() => setOpen(false)}
+              className="block link-muted cursor-pointer"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+      )}
+    </header>
   );
 };
 
