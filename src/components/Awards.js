@@ -21,7 +21,7 @@ const awards = [
 
 const Awards = () => {
   return (
-    <section className="py-20 border-t border-zinc-200 dark:border-zinc-800">
+    <section className="py-8 border-t border-zinc-200 dark:border-zinc-800">
       <h2 className="section-label">Awards</h2>
       <ul className="space-y-4">
         {awards.map((award) => (

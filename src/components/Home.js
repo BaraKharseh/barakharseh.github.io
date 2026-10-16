@@ -11,7 +11,7 @@ const links = [
 
 const Home = () => {
   return (
-    <section id="home" className="pt-32 pb-20">
+    <section id="home" className="pt-32 pb-8">
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
         Bara Kharseh
       </h1>

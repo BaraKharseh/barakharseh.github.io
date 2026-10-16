@@ -1,11 +1,11 @@
 import React from "react";
-import profilePic from "../images/IMG_2406.jpg";
+import profilePic from "../images/profile.png";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="py-20 border-t border-zinc-200 dark:border-zinc-800"
+      className="py-8 border-t border-zinc-200 dark:border-zinc-800"
     >
       <h2 className="section-label">About</h2>
       <div className="flex flex-col sm:flex-row gap-8 items-center">

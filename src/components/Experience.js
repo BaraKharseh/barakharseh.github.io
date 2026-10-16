@@ -45,7 +45,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-20 border-t border-zinc-200 dark:border-zinc-800"
+      className="py-8 border-t border-zinc-200 dark:border-zinc-800"
     >
       <h2 className="section-label">Experience</h2>
       <ul className="space-y-8">

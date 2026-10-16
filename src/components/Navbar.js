@@ -18,6 +18,7 @@ const Navbar = () => {
           to="home"
           smooth
           duration={500}
+          offset={-80}
           className="text-sm font-medium cursor-pointer"
         >
           BK
@@ -30,6 +31,7 @@ const Navbar = () => {
               to={link.to}
               smooth
               duration={500}
+              offset={-80}
               className="link-muted cursor-pointer"
             >
               {link.name}
@@ -58,6 +60,7 @@ const Navbar = () => {
               to={link.to}
               smooth
               duration={500}
+              offset={-80}
               onClick={() => setOpen(false)}
               className="block link-muted cursor-pointer"
             >

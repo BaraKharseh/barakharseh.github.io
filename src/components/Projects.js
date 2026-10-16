@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 border-t border-zinc-200 dark:border-zinc-800"
+      className="py-8 border-t border-zinc-200 dark:border-zinc-800"
     >
       <h2 className="section-label">Projects</h2>
       <ul className="space-y-6">
